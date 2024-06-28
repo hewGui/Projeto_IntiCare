@@ -21,7 +21,7 @@ USE `db_intcare` ;
 -- Table `db_intcare`.`tb_categorias`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `db_intcare`.`tb_categorias` (
-  `id` BIGINT NOT NULL AUTO_INCREMENT,
+  `id` BIGINT AUTO_INCREMENT,
   `nome_categoria` VARCHAR(255) NOT NULL,
   `genero` VARCHAR(100) NOT NULL,
   PRIMARY KEY (`id`))
@@ -32,7 +32,7 @@ ENGINE = InnoDB;
 -- Table `db_intcare`.`tb_usuario`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `db_intcare`.`tb_usuario` (
-  `id` BIGINT NULL AUTO_INCREMENT,
+  `id` BIGINT AUTO_INCREMENT,
   `nome_usuario` VARCHAR(255) NOT NULL,
   `email_usuario` VARCHAR(255) NOT NULL,
   `senha` VARCHAR(55) NOT NULL,
@@ -46,7 +46,7 @@ ENGINE = InnoDB;
 -- Table `db_intcare`.`tb_produtos`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `db_intcare`.`tb_produtos` (
-  `id` BIGINT NOT NULL,
+  `id` BIGINT AUTO_INCREMENT,
   `prod_nome` VARCHAR(100) NOT NULL,
   `prod_descricao` VARCHAR(255) NOT NULL,
   `preco` DECIMAL(6,2) NOT NULL,
